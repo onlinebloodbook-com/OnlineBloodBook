@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN" 
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />  
+    <constant name="struts.objectFactory.spring.autoWire" value="type" />
+    <!-- devMode is helpful when you want some extra logs for debugging -->
+    <constant name="struts.devMode" value="false" />  
+    <constant name="struts.custom.i18n.resources" value="global" />
+    <constant name="struts.ui.theme" value="css_xhtml" />  
+    <constant name="struts.i18n.reload" value="false"/>
+     <!--
+        This is important if you are planning to have slashes in Action URLs
+        e.g. In this demo, employee is deleted using URL /delete/10
+        This this is set to false; then struts will try to find mapping for
+        URL "/10" instaed of "/delete/10"
+     -->
+    <constant name="struts.enable.SlashesInActionNames" value="true"/>
+      
+      
+	<package name="default" extends="struts-default" namespace="/">
+		<result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult"/>
+			<result-type name="json" class="org.apache.struts2.json.JSONResult" />
+		</result-types>
+		
+		 <action name="registerLink1" class="com.bloodbook.action.RegisterAction" method="execute">
+		<result name="register" type="tiles">register</result>    
+        </action> 
+        
+        <action name="requestLink2" class="com.bloodbook.action.RequestAction" method="execute">
+            <result name="request" type="tiles">request</result>
+            
+        </action>
+        <action name="feedbackLink4" class="com.bloodbook.action.FeedbackAction" method="execute">
+           <result name="feedback" type="tiles">feedback</result>
+            
+        </action>
+       
+        <action name="helpLink5" class="com.bloodbook.action.HelpAction" method="execute">
+           <result name="help" type="tiles">help</result>
+        </action>
+        
+        
+        <action name="*Link1" method="{1}"  class="com.bloodbook.action.RegisterAction">  
+               <result name="addRegister" type="tiles">reg_succes</result> 
+               <result name="update" type="tiles">update_register</result>
+               <result name="updateRegister" type="tiles">update_succes</result>
+               <result name="listRegister" type="tiles">all_reg_list</result>  
+               <result name="getRegister" type="tiles">get_register</result>   
+               <result name="searchList" type="tiles">searchList</result> 
+               <result name="loginUpdateSuccess" type="tiles">login_update_succes</result>
+               <result name="loginUpdate" type="tiles">login_update</result>
+               <result name="loginSuccess" type="tiles">Login_Success</result> 
+        </action>  
+        
+        <action name="*Link2" method="{1}"  class="com.bloodbook.action.RequestAction" >  
+            <result name="addRequest" type="tiles">req_succes</result>
+            <result name="update" type="tiles">update_request</result>
+            <result name="updateRequest" type="tiles">update_req_succes</result>
+            <result name="listRequest" type="tiles">all_req_list</result>  
+             <result name="home" type="tiles">home</result>
+             <result name="getRequest" type="tiles">get_request</result> 
+        </action> 
+        
+        <action name="login"  class="com.bloodbook.action.LoginAction" method="execute">
+            <result name="SUCCESS" type="tiles">Login_Success</result>
+            <result name="ERROR" type="tiles">Login_failed</result>
+            <result name="input" type="tiles">login_update</result>
+        </action>
+        
+        <action name="*Link4" method="{1}" class="com.bloodbook.action.FeedbackAction" >
+            <result name="addFeedback" type="tiles">feedback</result>
+            <result name="listFeedback10" type="tiles">feedback</result>
+            <result name="listFeedback" type="tiles">feedback</result>
+            
+        </action>
+         <action name="*Link5" method="{1}" class="com.bloodbook.action.HelpAction" >
+            <result name="addHelp" type="tiles">help</result>
+            <result name="listHelp10" type="tiles">help</result>
+            <result name="listHelp" type="tiles">help</result>
+            
+        </action>
+        
+		<action name="*Link" method="{1}" class="com.bloodbook.action.LinkAction">
+			
+		    <result name="about" type="tiles">about</result> 
+		     <result name="blood_history" type="tiles">blood_history</result>
+			<result name="search" type="tiles">search</result>
+			<result name="tips" type="tiles">tips</result>
+			<result name="posters" type="tiles">posters</result>
+			<result name="benefits" type="tiles">benefits</result>
+			<result name="facts" type="tiles">facts</result>
+			<result name="eligibility" type="tiles">eligibility</result>
+			<result name="compatibility" type="tiles">compatibility</result>
+			<result name="contact" type="tiles">contact</result>
+			<result name="faq" type="tiles">faq</result>
+			<result name="why_donate" type="tiles">why_donate</result>
+			<result name="who_needs" type="tiles">who_needs</result>
+			<result name="privacypolicy" type="tiles">privacypolicy</result>
+		</action>
+	</package>
+</struts>

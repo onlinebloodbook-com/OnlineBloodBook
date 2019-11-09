@@ -1,0 +1,45 @@
+
+/* #outerContainer {
+width:900px;
+height:202px;
+ margin:auto;
+position:relative; } */
+
+#imageScroller {
+    width:225px;
+    height: 200px;
+    position: relative;
+    background: #BF0300;
+    border-radius: 20px;
+}
+
+#viewer {
+ width:200px;
+ height:182px;
+overflow:hidden; margin:auto;
+position:relative; top:10px; }
+
+#imageScroller a:active, #imageScroller a:visited { color:#000000; }
+#imageScroller a img { border:0; }
+#controls {
+width:900px;
+height:47px;
+ background:url(http://1.bp.blogspot.com/--jemYBfwW5I/T6-QDcwWjGI/AAAAAAAAB4w/YM2Wi91Bhjs/s1600/1.png) no-repeat; position:absolute;top:4px; left:4px; z-index:10;}
+
+#controls a {
+ width:37px;
+height:35px;
+position:absolute; top:3px; }
+
+#controls a:active, #controls a:visited { color:#0d0d0d; }
+
+#title { color:#ffffff; font-family:arial; font-size:23px; font-weight:bold; width:100%; text-align:center; margin-top:10px; }
+
+#rtl {background:url(http://1.bp.blogspot.com/-UDdR8ia8VRg/T6-EMJkOa_I/AAAAAAAAB38/yAlBZsPFIOg/s1600/rtl.png) no-repeat; left:100px; }
+
+#rtl:hover {background:url(http://1.bp.blogspot.com/-UDdR8ia8VRg/T6-EMJkOa_I/AAAAAAAAB38/yAlBZsPFIOg/s1600/rtl.png) no-repeat; left:99px; }
+
+#ltr {background:url(http://3.bp.blogspot.com/-vzam19EhobY/T6-EKCsNh2I/AAAAAAAAB3w/JlF_gyDGsD0/s1600/ltr.png) no-repeat; right:100px; }
+
+#ltr:hover {background:url(http://2.bp.blogspot.com/-292fELblPsA/T6-ELUa8IjI/AAAAAAAAB30/5P2DAt34ZYU/s1600/ltr_over.png) no-repeat; }
+

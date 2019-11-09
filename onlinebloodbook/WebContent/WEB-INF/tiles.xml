@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/baseLayout.jsp">
+      <put-attribute name="title"  value="Online Bloodbook"/>
+      <put-attribute name="tophead" value="/tophead.jsp"/>
+      <put-attribute name="header" value="/header.jsp"/>
+      <put-attribute name="nav" value="/nav.jsp"/>
+      <put-attribute name="leftmenu"   value="/leftmenu.jsp"/>
+       <put-attribute name="rightmenu"   value="/rightmenu.jsp"/>
+      <put-attribute name="body"   value="/body.jsp"/>
+      <put-attribute name="footer"   value="/footer.jsp"/>
+      
+  </definition>
+  
+  <definition name="baseLayoutlogin" template="/baseLayout.jsp">
+      <put-attribute name="title"  value="Online Bloodbook"/>
+      <put-attribute name="tophead" value="/tophead.jsp"/>
+      <put-attribute name="header" value="/header.jsp"/>
+      <put-attribute name="nav" value="/nav.jsp"/>
+      <put-attribute name="leftmenu"   value="/leftmenu.jsp"/>
+       <put-attribute name="rightmenu"   value="/Logout.jsp"/>
+      <put-attribute name="body"   value="/body.jsp"/>
+      <put-attribute name="footer"   value="/footer.jsp"/>
+      
+  </definition>
+  
+  <definition name="home" extends="baseLayout">
+      <put-attribute name="body"   value="/home.jsp"/>      
+  </definition>
+  
+  <definition name="about" extends="baseLayout">
+      <put-attribute name="body"   value="/about.jsp"/>      
+  </definition>
+  
+  <definition name="blood_history" extends="baseLayout">
+      <put-attribute name="body"   value="/blood_history.jsp"/>      
+  </definition>
+  
+  <definition name="register" extends="baseLayout">
+      <put-attribute name="body"   value="/register.jsp"/>      
+  </definition>
+  
+  <definition name="request" extends="baseLayout">
+      <put-attribute name="body"   value="/request.jsp"/>      
+  </definition>
+  
+  <definition name="feedback" extends="baseLayout">
+      <put-attribute name="body"   value="/feedback.jsp"/>      
+  </definition>
+  
+  <definition name="search" extends="baseLayout">
+      <put-attribute name="body"   value="/search.jsp"/>      
+  </definition>
+  
+   <definition name="help" extends="baseLayout">
+      <put-attribute name="body"   value="/help.jsp"/>      
+  </definition>
+  
+  <definition name="tips" extends="baseLayout">
+      <put-attribute name="body"   value="/tips.jsp"/>      
+  </definition>
+  
+  <definition name="benefits" extends="baseLayout">
+      <put-attribute name="body"   value="/benefits.jsp"/>      
+  </definition>
+  
+  <definition name="facts" extends="baseLayout">
+      <put-attribute name="body"   value="/facts.jsp"/>      
+  </definition>
+  
+  <definition name="eligibility" extends="baseLayout">
+      <put-attribute name="body"   value="/eligibility.jsp"/>      
+  </definition>
+  
+  <definition name="compatibility" extends="baseLayout">
+      <put-attribute name="body"   value="/compatibility.jsp"/>      
+  </definition>
+  
+  <definition name="faq" extends="baseLayout">
+      <put-attribute name="body"   value="/faq.jsp"/>      
+  </definition>
+  
+  <definition name="all_reg_list" extends="baseLayout">
+      <put-attribute name="body"   value="/all_reg_list.jsp"/>      
+  </definition>
+  
+  <definition name="get_register" extends="baseLayout">
+      <put-attribute name="body"   value="/get_register.jsp"/>      
+  </definition>
+  
+  <definition name="get_request" extends="baseLayout">
+      <put-attribute name="body"   value="/get_request.jsp"/>      
+  </definition>
+  
+   <definition name="all_req_list" extends="baseLayout">
+      <put-attribute name="body"   value="/all_req_list.jsp"/>      
+  </definition>
+  
+  <definition name="searchList" extends="baseLayout">
+      <put-attribute name="body"   value="/searchList.jsp"/>      
+  </definition>
+  
+  <definition name="why_donate" extends="baseLayout">
+      <put-attribute name="body"   value="/why_donate.jsp"/>     
+  </definition>
+  
+  <definition name="privacypolicy" extends="baseLayout">
+      <put-attribute name="body"   value="/privacypolicy.jsp"/>      
+  </definition>
+  
+  <definition name="who_needs" extends="baseLayout">
+      <put-attribute name="body"   value="/who_needs.jsp"/>      
+  </definition>
+  
+   <definition name="contact" extends="baseLayout">
+      <put-attribute name="body"   value="/contact.jsp"/>      
+  </definition>
+  
+  <definition name="reg_succes" extends="baseLayout">
+      <put-attribute name="body"   value="/reg_succes.jsp"/>      
+  </definition>
+  
+  <definition name="update_register" extends="baseLayout">
+      <put-attribute name="body"   value="/update_register.jsp"/>      
+  </definition>
+  
+  <definition name="update_request" extends="baseLayout">
+      <put-attribute name="body"   value="/update_request.jsp"/>      
+  </definition>
+  
+  <definition name="req_succes" extends="baseLayout">
+      <put-attribute name="body"   value="/req_succes.jsp"/>      
+  </definition>
+  
+  <definition name="update_succes" extends="baseLayout">
+      <put-attribute name="body"   value="/update_succes.jsp"/>      
+  </definition>
+  
+  <definition name="update_req_succes" extends="baseLayout">
+      <put-attribute name="body"   value="/update_req_succes.jsp"/>      
+  </definition>
+  
+  <definition name="Login_Success" extends="baseLayoutlogin">
+      <put-attribute name="body"   value="/Login_Success.jsp"/>      
+  </definition>
+  
+  <definition name="login_update" extends="baseLayoutlogin">
+      <put-attribute name="body"   value="/login_update.jsp"/>      
+  </definition>
+  
+  <definition name="login_update_succes" extends="baseLayoutlogin">
+      <put-attribute name="body"   value="/login_update_succes.jsp"/>      
+  </definition>
+  
+  <definition name="Login_failed" extends="baseLayout">
+      <put-attribute name="body"   value="/Login_failed.jsp"/>      
+  </definition>
+  
+</tiles-definitions>
