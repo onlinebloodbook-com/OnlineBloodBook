@@ -1,18 +1,7 @@
 package com.bloodbook.action;
 
-
-import java.util.Map;
-
-
-
-
-
-import javax.persistence.Version;
-
 import org.springframework.beans.factory.annotation.Autowired;
-
 import com.bloodbook.bean.RegisterBean;
-import com.bloodbook.model.Login;
 import com.bloodbook.service.LoginService;
 import com.opensymphony.xwork2.ActionSupport;
 
